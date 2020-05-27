@@ -1,0 +1,985 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Raleway:wght@500&display=swap");
+
+:root {
+  --maincolor: #f6f2ef;
+  --subcolor: #34d6bf;
+  --titlecolor: #0bad99;
+  --spotlight: #ffb43b;
+}
+/* ------------------------- RWD ------------------------------- */
+
+@media (min-width: 320px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .titleanime {
+    font-size: 3rem;
+  }
+  #profile-dialog {
+    background: url(./img/webuse/dialog_reverse.svg) no-repeat center center;
+    background-size: 15rem;
+    width: 15rem;
+    height: 12rem;
+    top: 0rem;
+    left: 0.2rem;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+  }
+  .profile-photo {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .titleanime {
+    font-size: 3.6rem;
+  }
+
+  #profile-dialog {
+    background: url(./img/webuse/dialog_reverse.svg) no-repeat center center;
+    background-size: 15rem;
+    width: 15rem;
+    height: 12rem;
+    top: 0rem;
+    left: 0.2rem;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+  }
+  .profile-photo {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+  .modal-content {
+    width: 90%;
+  }
+
+  .titleanime {
+    font-size: 4.5rem;
+  }
+  .rwd-dissapear {
+    display: none;
+  }
+  #profile-dialog {
+    background: url(./img/webuse/dialog_reverse.svg) no-repeat center center;
+    background-size: 15rem;
+    width: 15rem;
+    height: 12rem;
+    top: 0rem;
+    left: 0.2rem;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+  }
+  .profile-photo {
+    margin-top: 0rem;
+  }
+  .pg-first-text .pg-text {
+    color: var(--maincolor);
+    margin-top: 4rem;
+    margin-left: 10rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .modal-content {
+    width: 80%;
+  }
+
+  .titleanime {
+    font-size: 4.5rem;
+  }
+
+  #profile-dialog {
+    background: url(./img/webuse/dialog.svg) no-repeat center center;
+    background-size: 18rem;
+    width: 18rem;
+    height: 15rem;
+    top: 0rem;
+    left: 22rem;
+    padding-top: 4.5rem;
+    padding-left: 4rem;
+  }
+  .profile-photo {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+  .modal-content {
+    width: 70%;
+  }
+
+  .titleanime {
+    font-size: 4.5rem;
+  }
+
+  #profile-dialog {
+    background: url(./img/webuse/dialog.svg) no-repeat center center;
+    background-size: 18rem;
+    width: 18rem;
+    height: 15rem;
+    top: 1rem;
+    left: 22rem;
+    padding-top: 4.5rem;
+    padding-left: 4rem;
+  }
+  .profile-photo {
+    margin-top: 0rem;
+  }
+  .pg-first-text .pg-text {
+    margin-top: 10rem;
+    margin-left: 5rem;
+  }
+  .pg-second-text .pg-text {
+    margin-top: 10.5rem;
+    margin-left: 5.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    width: 60%;
+  }
+
+  .titleanime {
+    font-size: 4.5rem;
+  }
+
+  #profile-dialog {
+    background: url(./img/webuse/dialog.svg) no-repeat center center;
+    background-size: 18rem;
+    width: 18rem;
+    height: 15rem;
+    top: 1rem;
+    left: 27rem;
+    padding-top: 4.5rem;
+    padding-left: 4rem;
+  }
+  .profile-photo {
+    margin-top: 0rem;
+  }
+  .pg-first-text .pg-text {
+    margin-top: 10rem;
+    margin-left: 9.5rem;
+  }
+
+  .pg-second-text .pg-text {
+    margin-top: 10.5rem;
+    margin-left: 5.5rem;
+  }
+}
+
+/* --------------------------- web start ------------------------- */
+
+body {
+  background-color: var(--maincolor);
+  color: darkslategray;
+  font-family: "Raleway", "Noto Sans TC", sans-serif;
+  font-size: 0.9rem;
+}
+
+.container {
+  padding: 6rem 2rem;
+  width: 100%;
+  border-radius: 3rem;
+}
+
+.title {
+  text-align: center;
+  font-family: "Marck Script", "Noto Sans TC", cursive, sans-serif;
+  color: var(--subcolor);
+  /* margin-bottom: 1.5rem; */
+}
+
+.title2 {
+  text-align: center;
+  font-family: "Marck Script", "Noto Sans TC", cursive, sans-serif;
+  color: var(--maincolor);
+  margin-top: -0.5rem;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 12rem;
+  background: url("./img/webuse/flow_green_pattern.svg") repeat-x bottom;
+  background-size: 0.8rem;
+}
+
+/* -------------------------- slide in ----------------------- */
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+  /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* -------------------- background --------------------------- */
+
+.bg-white {
+  width: 100%;
+  padding-bottom: 5rem;
+  background: url("./img/webuse/flow_white_pattern.svg") right bottom repeat;
+  background-size: 5rem;
+  z-index: -1;
+}
+
+.bg-white-after {
+  background: url("./img/webuse/flow_white_pattern.svg") right top repeat;
+  background-size: 5rem;
+  -webkit-mask: url("./img/webuse/flow_white.svg") repeat-x;
+  mask: url("./img/webuse/flow_white.svg") repeat-x;
+  margin-top: -5px;
+  width: 100%;
+  height: 10rem;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.bg-green {
+  width: 100%;
+  padding-bottom: 5rem;
+  background: url("./img/webuse/flow_green_pattern.svg") right bottom repeat;
+  background-size: 8rem;
+  z-index: -1;
+}
+
+.bg-green-after {
+  background: url("./img/webuse/flow_green_pattern.svg") right top repeat;
+  background-size: 8rem;
+  -webkit-mask: url("./img/webuse/flow_green.svg") repeat-x;
+  mask: url("./img/webuse/flow_green.svg") repeat-x;
+  margin-top: -1px;
+  width: 100%;
+  height: 10rem;
+  z-index: 1;
+  margin-bottom: 4rem;
+}
+
+/* ------------------------ first part animation---------------------------- */
+
+.circle__item {
+  width: 200px;
+  height: 200px;
+}
+
+.circle__spinner {
+  width: 200px;
+  height: 200px;
+}
+
+.circle__spinner .path {
+  stroke: var(--subcolor);
+  stroke-linecap: round;
+  animation: dash 2s;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dasharray: 130, 150;
+    stroke-dashoffset: 0;
+  }
+}
+
+.myicon {
+  height: 6rem;
+  margin-bottom: -9.2rem;
+}
+
+#domilk {
+  background: url("./img/webuse/domilk.svg") no-repeat center center;
+  background-size: 4rem;
+  height: 6rem;
+  display: none;
+}
+
+#con-first {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleanime {
+  /* position: relative; */
+  font-family: "Marck Script", cursive;
+  color: var(--subcolor);
+  font-weight: 200;
+}
+
+.titleanime .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.titleanime .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.myscrollbtn {
+  height: 4rem;
+}
+
+.first-button-part {
+  text-align: center;
+  display: none;
+}
+
+#scroll-next {
+  background: url("./img/webuse/scrolldown.svg") no-repeat center center;
+  background-size: 2.5rem;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+}
+
+#scroll-next:hover {
+  border: none;
+  transform: scale(1.2);
+  filter: hue-rotate(325deg) brightness(90%);
+}
+
+#scroll-next:focus {
+  border: none;
+  outline: none;
+}
+
+/* ------------------------ second part profile ---------------------------- */
+
+#con-profile {
+  background-color: var(--maincolor);
+}
+
+.myprofile {
+  align-items: center;
+}
+
+#profile-exp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.exp-img {
+  width: 10%;
+  margin: 0 auto;
+}
+.exp-img-first,
+.exp-text-first,
+.exp-img-second,
+.exp-text-second,
+.exp-img-third,
+.exp-text-third {
+  height: 1rem;
+}
+.exp-img-first {
+  background: url(./img/webuse/flow_green_pattern.svg) repeat-y center;
+  background-size: 0.3rem;
+}
+.exp-img-second {
+  width: 1rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.exp-img-third {
+  background: url(./img/webuse/flow_green_pattern.svg) repeat-y center;
+  background-size: 0.3rem;
+}
+
+.exp-img-none {
+  background: none;
+}
+
+.exp-img-edu {
+  background-color: var(--subcolor);
+}
+
+.exp-img-event {
+  background-color: var(--titlecolor);
+}
+
+.exp-img-work {
+  background-color: var(--spotlight);
+}
+
+.exp-text {
+  width: 90%;
+}
+
+.exp-text-second {
+  margin-top: -0.2rem;
+}
+.exp-text-time {
+  margin-right: 0.5rem;
+}
+
+#profile-dialog {
+  position: absolute;
+  z-index: 1000;
+}
+
+.my-name {
+  color: #007689;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0 4rem 0;
+}
+
+.myphoto {
+  transform: rotate(-3deg);
+  box-shadow: 1rem 0.5rem var(--subcolor);
+}
+
+#profile-dialog:hover,
+.myphoto:hover {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+.profile-ability {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ability-text {
+  min-width: 12rem;
+  margin: 0 auto;
+}
+
+.ability-text h6 {
+  color: var(--titlecolor);
+}
+
+.profile-hr {
+  border-color: var(--titlecolor);
+  border-width: 1px;
+  margin-top: -3px;
+  margin-bottom: 0.7rem;
+}
+
+/* ----------------------- third part program ----------------------- */
+#con-program {
+  /* background-color: var(--subcolor); */
+  background: url(./img/webuse/flow_green_pattern.svg) repeat;
+  background-size: 8rem;
+}
+
+.myprogramworks {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 320px) and (max-width: 385px) {
+  .pg-first-text {
+    order: 1;
+    width: 100%;
+    background: url(./img/webuse/programdg01_rwd.svg) no-repeat center center;
+    background-size: 16rem;
+    height: 12rem;
+  }
+  .pg-first-src {
+    order: 2;
+    width: 100%;
+    margin: 0 auto;
+    height: 18rem;
+  }
+  .pg-second-src {
+    order: 4;
+    width: 100%;
+    margin: 0 auto;
+    height: 18rem;
+  }
+  .pg-second-text {
+    order: 3;
+    width: 100%;
+    background: url(./img/webuse/programdg02_rwd.svg) no-repeat center center;
+    background-size: 16rem;
+    height: 12rem;
+  }
+  .pgwork {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pg-first-text .pg-text {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .pg-second-text .pg-text {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 386px) and (max-width: 544px) {
+  .pg-first-text {
+    order: 1;
+    width: 100%;
+    background: url(./img/webuse/programdg01.svg) no-repeat center center;
+    background-size: 20rem;
+    height: 15rem;
+  }
+  .pg-first-src {
+    order: 2;
+    width: 100%;
+    margin: 0 auto;
+    height: 25rem;
+  }
+  .pg-second-src {
+    order: 4;
+    width: 100%;
+    margin: 0 auto;
+    height: 25rem;
+  }
+  .pg-second-text {
+    order: 3;
+    width: 100%;
+    background: url(./img/webuse/programdg02.svg) no-repeat center center;
+    background-size: 20rem;
+    height: 15rem;
+  }
+  .pgwork {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pg-first-text .pg-text {
+    margin-top: 2.5rem;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .pg-second-text .pg-text {
+    margin-top: 3rem;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 545px) and (max-width: 991px) {
+  .pg-first-text {
+    order: 1;
+    width: 100%;
+    background: url(./img/webuse/programdg01.svg) no-repeat center center;
+    background-size: 22rem;
+    height: 18rem;
+  }
+  .pg-first-src {
+    order: 2;
+    width: 80%;
+    margin: 0 auto;
+    height: 28rem;
+  }
+  .pg-second-src {
+    order: 4;
+    width: 80%;
+    margin: 0 auto;
+    height: 28rem;
+  }
+  .pg-second-text {
+    order: 3;
+    width: 100%;
+    background: url(./img/webuse/programdg02.svg) no-repeat center center;
+    background-size: 22rem;
+    height: 18rem;
+  }
+  .pgwork {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .pg-first-text .pg-text {
+    margin-top: 4.5rem;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+  .pg-second-text .pg-text {
+    margin-top: 4.5rem;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .pg-first-text {
+    order: 1;
+    width: 40%;
+    background: url(./img/webuse/programdg01.svg) no-repeat center right;
+    background-size: 22rem;
+    margin-right: -4rem;
+    margin-left: 4rem;
+    height: 30rem;
+  }
+  .pg-first-src {
+    order: 2;
+    width: 50%;
+    height: 30rem;
+  }
+  .pg-second-src {
+    order: 3;
+    width: 50%;
+    margin-left: 5rem;
+    height: 30rem;
+  }
+  .pg-second-text {
+    order: 4;
+    width: 40%;
+    background: url(./img/webuse/programdg02.svg) no-repeat center left;
+    background-size: 22rem;
+    margin-left: -4rem;
+    margin-right: 4rem;
+    height: 30rem;
+  }
+}
+
+.pg-first-src,
+.pg-second-src {
+  min-width: 18rem;
+  z-index: 10;
+}
+
+.pg-first-text,
+.pg-second-text {
+  min-width: 10rem;
+}
+
+.pg-first-text .pg-text,
+.pg-second-text .pg-text {
+  color: var(--maincolor);
+}
+
+.pg-text p {
+  font-size: 1.2rem;
+}
+
+.pg-text b {
+  color: var(--subcolor);
+}
+
+.pg-second-text .pg-text b {
+  color: var(--spotlight);
+}
+
+.my2013web {
+  color: var(--spotlight);
+}
+.my2013web:hover {
+  color: var(--spotlight);
+  filter: hue-rotate(-20deg) brightness(95%);
+  text-decoration: none;
+}
+.pgwork:hover {
+  transform: scale(1.1);
+}
+
+.pg-first-text:hover,
+.pg-second-text:hover {
+  transform: scale(1.03);
+  z-index: 11;
+}
+
+.subprogramworks {
+  margin-bottom: 2.5rem;
+}
+.participate-title {
+  color: #a82400;
+  width: 10rem;
+  background: url(./img/webuse/flow_orange_pattern.svg) repeat-x bottom;
+  background-size: 0.6rem;
+  margin: 0 auto;
+}
+
+.sub-title-white {
+  text-align: center;
+}
+
+.participate-info {
+  width: 17.5rem;
+  margin: 0 auto;
+  text-align: center;
+  background: url(./img/webuse/programdg03.svg) no-repeat center center;
+  background-size: 17.5rem;
+  height: 7rem;
+  padding-top: 2.5rem;
+}
+
+.participate-work {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.sub-works:hover {
+  transform: scale(1.05) rotate(10deg);
+}
+/* ------------------------ picture part ---------------------------- */
+#con-picture {
+  background-color: var(--maincolor);
+}
+
+/* .pic-part-btns {
+  margin-bottom: 1.5rem;
+} */
+
+.title-ch {
+  color: var(--titlecolor);
+  text-align: center;
+  margin-top: -0.8rem;
+  margin-bottom: 1rem;
+}
+
+.my-btn {
+  background: url(./img/webuse/flow_green_pattern.svg);
+  color: #004740;
+  margin-bottom: 0.8rem;
+}
+
+.my-btn:hover {
+  filter: brightness(90%);
+}
+
+.my-btn:focus {
+  box-shadow: none;
+}
+
+.my-btn.btn-all {
+  color: black;
+  filter: hue-rotate(190deg);
+}
+
+.my-btn.btn-all:hover {
+  filter: hue-rotate(190deg) brightness(85%);
+}
+
+.my-btn.newtoold,
+.my-btn.oldtonew {
+  filter: hue-rotate(30deg);
+}
+
+.my-btn.newtoold:hover,
+.my-btn.oldtonew:hover {
+  filter: hue-rotate(30deg) brightness(90%);
+}
+
+.my-btn-toggle {
+  background: url(./img/webuse/flow_orange_pattern.svg);
+  color: #780c00;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+}
+
+.picture img {
+  width: 100%;
+  height: 8rem;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+#pic-inner.is-show-illust .picture {
+  display: none;
+}
+
+#pic-inner.is-show-background .picture {
+  display: none;
+}
+
+#pic-inner.is-show-cute .picture {
+  display: none;
+}
+
+#pic-inner.is-show-charactor .picture {
+  display: none;
+}
+
+#pic-inner.is-show-background .pic-background {
+  display: block;
+}
+
+#pic-inner.is-show-charactor .pic-charactor {
+  display: block;
+}
+
+#pic-inner.is-show-cute .pic-cute {
+  display: block;
+}
+
+#pic-inner.is-show-illust .pic-illust {
+  display: block;
+}
+
+/* ---------------------------- modal ---------------------------- */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-height: 85vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-pic {
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-pic img {
+  width: auto;
+  max-height: 70vh;
+  vertical-align: top;
+  object-fit: cover;
+}
+/* ------------------------- contact me ------------------------ */
+.contactme {
+  width: 20rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  color: var(--subcolor);
+}
+
+.contactme div img {
+  margin-top: -0.8rem;
+}
+
+.contactme:hover {
+  transform: scale(1.08);
+}
+/* ------------------------- scroll top ------------------------ */
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.scroll {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  background: var(--spotlight);
+  border-radius: 30%;
+  /* background: rgba(178, 178, 178, 0.7); */
+  padding: 1.1rem;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.scroll:hover {
+  background: var(--spotlight);
+  filter: brightness(90%) hue-rotate(-20deg);
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.scroll:hover .fa {
+  padding-top: -10px;
+}
+.scroll .fa {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-left: 1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}

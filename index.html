@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meng</title>
+    <link rel="icon" type="image/png" href="./img/icon.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="mydatas.js"></script>
+    <link href="profile.css" rel="stylesheet" />
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- first animation block -->
+    <div class="bg-white">
+      <div class="slide-in section" id="con-first">
+        <div>
+          <div class="myicon">
+            <div
+              id="domilk"
+              class="animate__animated animate__bounceInDown"
+            ></div>
+          </div>
+          <div class="circle__item">
+            <svg class="circle__spinner" viewBox="0 0 50 50">
+              <circle
+                class="path"
+                cx="25"
+                cy="25"
+                r="20"
+                fill="none"
+                stroke="#34D6BF"
+                stroke-width="1"
+              ></circle>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h1 class="titleanime">
+            <span class="text-wrapper">
+              <span class="mytitle">Meng's Portfolio</span>
+            </span>
+          </h1>
+          <div class="myscrollbtn">
+            <div class="first-button-part">
+              <button
+                type="button"
+                id="scroll-next"
+                class="animate__animated animate__fadeInUp"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- second profile block -->
+    <div class="bg-green">
+      <div class="bg-white-after"></div>
+      <div class="container slide-in section" id="con-profile">
+        <h1 class="title">Profile</h1>
+        <div class="myprofile row">
+          <div class="profile-basic col-md-12 col-lg-8">
+            <div id="profile-dialog">
+              <div class="profile-dialog-text">
+                <p>
+                  <span class="my-name"><b>孟欣, Meng</b></span
+                  ><br />Taiwan, 台中市
+                </p>
+                <p>網頁前端工程師 | 美術設計師</p>
+              </div>
+            </div>
+            <div class="profile-photo slide-in">
+              <img src="./img/webuse/myphoto.jpg" class="img-fluid myphoto" />
+            </div>
+            <h4 class="sub-title slide-in">專業技能</h4>
+            <div class="profile-ability">
+              <div class="ability-text slide-in">
+                <h6>網頁前端工程</h6>
+                <hr class="profile-hr" />
+                <p>
+                  擅長美化設計版面<br />
+                  製作RWD響應式設計網頁<br />
+                  - CSS / SASS / BS4<br />
+                  - JavaScript / JQuery<br />
+                  - React.js<br />
+                  - git<br />
+                </p>
+              </div>
+              <div class="ability-text slide-in">
+                <h6>繪圖設計</h6>
+                <hr class="profile-hr" />
+                <p>
+                  工具熟練、規格概念明確<br />
+                  長期接案，合作過的公司：<br />
+                  神魔之塔、萌番文化等。<br />
+                  - Adobe Photoshop<br />
+                  - Adobe Illustrator<br />
+                  - Clip Studio Paint<br />
+                </p>
+              </div>
+              <div class="ability-text slide-in rwd-dissapear">
+                <h6>日語能力</h6>
+                <hr class="profile-hr" />
+                <p>
+                  曾赴日語文學校留學一年<br />
+                  進階會話及敬語皆無障礙<br />
+                  - N1合格<br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 profile-exp">
+            <h4 class="sub-title slide-in">經歷</h4>
+            <div class="slide-in" id="profile-exp"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- third profile block -->
+    <div class="bg-white">
+      <div class="bg-green-after"></div>
+      <div class="container slide-in" id="con-program">
+        <h1 class="title2">Work Collection</h1>
+        <h6 class="title2">前端相關作品</h6>
+        <div class="myprogramworks slide-in">
+          <div class="pg-first-text">
+            <div class="pg-text">
+              <p>資策會大專題結業作品</p>
+              <b>應用技術：</b><br />react.js / node.js / mySQL / git<br />
+              <b>負責項目：</b><br />事前UI設計 / 首頁 / 登入登出 / 註冊<br />
+              由 2:24 至 7:12<br />
+            </div>
+          </div>
+          <div class="pg-first-src">
+            <a href="https://youtu.be/Jj2iuXZmotA?t=144" target="_blank">
+              <img src="./img/webuse/webwork01.png" class="img-fluid pgwork" />
+            </a>
+          </div>
+          <div class="pg-second-src">
+            <a href="https://youtu.be/xz26xePB9hc" target="_blank">
+              <img src="./img/webuse/webwork02.png" class="img-fluid pgwork" />
+            </a>
+          </div>
+          <div class="pg-second-text">
+            <div class="pg-text">
+              <p>個人作業練習</p>
+              <b>應用技術：</b><br />CSS / BOOTSTRAP4<br />
+              為我於2013年用dreamweaver<br />
+              所製作的<a
+                href="https://yuuyuutube.github.io/pmonly2013/"
+                target="_blank"
+                class="my2013web"
+                ><b>販售會網站</b></a
+              >的重製版
+            </div>
+          </div>
+        </div>
+        <div class="subprogramworks">
+          <div class="participate-title slide-in">
+            <h4 class="sub-title-white">
+              參與作品
+            </h4>
+          </div>
+          <div class="participate-info slide-in">
+            <p>
+              僅參與網站的討論與設計，<br />
+              未參與網站程式碼撰寫。
+            </p>
+          </div>
+          <div class="row participate-work">
+            <div class="col-sm-12 col-md-4 slide-in">
+              <a
+                href="https://yuuyuutube.github.io/villainous/"
+                target="_blank"
+              >
+                <img
+                  src="./img/webuse/webwork03.png"
+                  class="img-fluid sub-works"
+                />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4 slide-in">
+              <a href="https://yuuyuutube.github.io/route1/" target="_blank">
+                <img
+                  src="./img/webuse/webwork04.png"
+                  class="img-fluid sub-works"
+                />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4 slide-in">
+              <a
+                href="https://yuuyuutube.github.io/pmaf/2015ss/index.html"
+                target="_blank"
+              >
+                <img
+                  src="./img/webuse/webwork05.png"
+                  class="img-fluid sub-works"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- forth pic block -->
+    <div class="bg-green">
+      <div class="bg-white-after"></div>
+      <div class="container slide-in" id="con-picture">
+        <h1 class="title">Illust Collection</h1>
+        <h6 class="title-ch">繪圖作品</h6>
+        <div class="pic-part-btns slide-in">
+          <span class="pic-buttons">
+            <button type="button" class="btn my-btn btn-all" name="all">
+              重置
+            </button>
+            <span>
+              <button
+                type="button"
+                class="btn my-btn newtoold"
+                onclick="clickNewBtn()"
+              >
+                New→Old
+              </button>
+              <button
+                type="button"
+                class="btn my-btn oldtonew"
+                onclick="clickOldBtn()"
+              >
+                Old→New
+              </button>
+            </span>
+            <br />
+            <button type="button" class="btn my-btn btn-illust" name="illust">
+              插畫
+            </button>
+            <button type="button" class="btn my-btn btn-cute" name="cute">
+              可愛版
+            </button>
+            <button
+              type="button"
+              class="btn my-btn btn-charactor"
+              name="charactor"
+            >
+              立繪
+            </button>
+            <button
+              type="button"
+              class="btn my-btn btn-background"
+              name="background"
+            >
+              背景
+            </button>
+          </span>
+        </div>
+        <div class="grid picInner slide-in" id="pic-inner"></div>
+      </div>
+    </div>
+    <div class="bg-green-after"></div>
+
+
+
+    <!-- contact me -->
+
+  <div class="contactme row">
+    <div class="col-3"><img src="/img/webuse/domilk.svg" class="img-fluid"></div>
+    <div class="col-9"><b>Contact me: menghsin@gmail.com</b></div>
+  </div>
+
+
+
+
+
+    <!-- myModal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-pic"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scrolltop -->
+    <div class="scrolltop">
+      <div class="scroll icon">
+        <i class="fa fa-4x fa-angle-up"></i>
+      </div>
+    </div>
+
+    <script src="profile.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="profile-slide.js"></script>
+  </body>
+</html>

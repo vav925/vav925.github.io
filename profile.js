@@ -1,7 +1,3 @@
-$(document).ready(function() {
-    $('#body').show();
-    $('#msg').hide();
-});
 //---------------------------- first part animation ------------------------------
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.titleanime .mytitle');
@@ -177,7 +173,6 @@ function discPic() {
 const picInner = document.querySelector("#pic-inner")
 const picBtns = document.querySelectorAll(".pic-buttons button")
 picBtns.forEach(e=> e.addEventListener('click',picSelector))
-
 
 // filter
 function picSelector(){

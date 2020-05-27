@@ -58,6 +58,10 @@
   .profile-photo {
     margin-top: 6rem;
   }
+
+  .scroll {
+    padding: 0.6rem;
+  }
 }
 
 @media (min-width: 479px) and (max-width: 767px) {
@@ -93,6 +97,10 @@
     margin-top: 4rem;
     margin-left: 10rem;
   }
+
+  .scroll {
+    padding: 0.8rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -117,6 +125,10 @@
 
   .profile-photo {
     margin-top: 0rem;
+  }
+
+  .scroll {
+    padding: 1rem;
   }
 }
 
@@ -153,6 +165,10 @@
     margin-top: 10.5rem;
     margin-left: 5.5rem;
   }
+
+  .scroll {
+    padding: 1.1rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -187,6 +203,10 @@
   .pg-second-text .pg-text {
     margin-top: 10.5rem;
     margin-left: 5.5rem;
+  }
+
+  .scroll {
+    padding: 1.1rem;
   }
 }
 
@@ -1013,7 +1033,7 @@ body {
   background: var(--spotlight);
   border-radius: 30%;
   /* background: rgba(178, 178, 178, 0.7); */
-  padding: 1.1rem;
+  /* padding: 1.1rem; */
   text-align: center;
   margin: 0 0 0 0;
   cursor: pointer;

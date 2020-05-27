@@ -28,8 +28,3 @@ $(window).scroll(function (event) {
     });
 
 });
-
-$(document).onload(function() {
-    $('#body').show();
-    $('#msg').hide();
-});

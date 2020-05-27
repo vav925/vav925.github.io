@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $('#body').show();
+    $('#msg').hide();
+});
 //---------------------------- first part animation ------------------------------
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.titleanime .mytitle');
@@ -18,13 +22,15 @@ setInterval(function() {
 }, 800);
 
 
-let firsthieght = document.querySelector("#con-first").offsetHeight;
-let nexthieght = document.querySelector(".bg-white-after").offsetHeight;
-let lasthieght = firsthieght + nexthieght;
-$('#scroll-next').on('click', () => window.scrollTo({
-    top: lasthieght,
-    behavior: 'smooth',
-  }));
+$('#scroll-next').on('click', function(){
+    let firsthieght = document.querySelector("#con-first").offsetHeight;
+    let nexthieght = document.querySelector(".bg-white-after").offsetHeight;
+    let lasthieght = firsthieght + nexthieght;
+    window.scrollTo({
+            top: lasthieght,
+            behavior: 'smooth',
+          })
+});
 
 let scrollnext = document.querySelector('.first-button-part'); 
 setInterval(function() {

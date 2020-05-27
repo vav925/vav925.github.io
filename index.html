@@ -1,48 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Meng</title>
-    <link rel="icon" type="image/png" href="./img/icon.png" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <script src="mydatas.js"></script>
-    <link href="profile.css" rel="stylesheet" />
-    <script src="./js/jquery-1.9.1.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <link
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Meng</title>
+  <link rel="icon" type="image/png" href="./img/icon.png" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <script src="mydatas.js"></script>
+  <link href="profile.css" rel="stylesheet" />
+  <script src="./js/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="msg">
+    <div>Loading, please wait...</div>
+  </div>
+  <div id="body" style="display:none;">
     <!-- first animation block -->
     <div class="bg-white">
       <div class="slide-in section" id="con-first">
         <div>
           <div class="myicon">
-            <div
-              id="domilk"
-              class="animate__animated animate__bounceInDown"
-            ></div>
+            <div id="domilk" class="animate__animated animate__bounceInDown"></div>
           </div>
           <div class="circle__item">
             <svg class="circle__spinner" viewBox="0 0 50 50">
-              <circle
-                class="path"
-                cx="25"
-                cy="25"
-                r="20"
-                fill="none"
-                stroke="#34D6BF"
-                stroke-width="1"
-              ></circle>
+              <circle class="path" cx="25" cy="25" r="20" fill="none" stroke="#34D6BF" stroke-width="1"></circle>
             </svg>
           </div>
         </div>
@@ -54,11 +42,7 @@
           </h1>
           <div class="myscrollbtn">
             <div class="first-button-part">
-              <button
-                type="button"
-                id="scroll-next"
-                class="animate__animated animate__fadeInUp"
-              ></button>
+              <button type="button" id="scroll-next" class="animate__animated animate__fadeInUp"></button>
             </div>
           </div>
         </div>
@@ -75,8 +59,7 @@
             <div id="profile-dialog">
               <div class="profile-dialog-text">
                 <p>
-                  <span class="my-name"><b>孟欣, Meng</b></span
-                  ><br />Taiwan, 台中市
+                  <span class="my-name"><b>孟欣, Meng</b></span><br />Taiwan, 台中市
                 </p>
                 <p>網頁前端工程師 | 美術設計師</p>
               </div>
@@ -159,12 +142,8 @@
               <p>個人作業練習</p>
               <b>應用技術：</b><br />CSS / BOOTSTRAP4<br />
               為我於2013年用dreamweaver<br />
-              所製作的<a
-                href="https://yuuyuutube.github.io/pmonly2013/"
-                target="_blank"
-                class="my2013web"
-                ><b>販售會網站</b></a
-              >的重製版
+              所製作的<a href="https://yuuyuutube.github.io/pmonly2013/" target="_blank"
+                class="my2013web"><b>販售會網站</b></a>的重製版
             </div>
           </div>
         </div>
@@ -182,33 +161,18 @@
           </div>
           <div class="row participate-work">
             <div class="col-sm-12 col-md-4 slide-in">
-              <a
-                href="https://yuuyuutube.github.io/villainous/"
-                target="_blank"
-              >
-                <img
-                  src="./img/webuse/webwork03.png"
-                  class="img-fluid sub-works"
-                />
+              <a href="https://yuuyuutube.github.io/villainous/" target="_blank">
+                <img src="./img/webuse/webwork03.png" class="img-fluid sub-works" />
               </a>
             </div>
             <div class="col-sm-12 col-md-4 slide-in">
               <a href="https://yuuyuutube.github.io/route1/" target="_blank">
-                <img
-                  src="./img/webuse/webwork04.png"
-                  class="img-fluid sub-works"
-                />
+                <img src="./img/webuse/webwork04.png" class="img-fluid sub-works" />
               </a>
             </div>
             <div class="col-sm-12 col-md-4 slide-in">
-              <a
-                href="https://yuuyuutube.github.io/pmaf/2015ss/index.html"
-                target="_blank"
-              >
-                <img
-                  src="./img/webuse/webwork05.png"
-                  class="img-fluid sub-works"
-                />
+              <a href="https://yuuyuutube.github.io/pmaf/2015ss/index.html" target="_blank">
+                <img src="./img/webuse/webwork05.png" class="img-fluid sub-works" />
               </a>
             </div>
           </div>
@@ -228,18 +192,10 @@
               重置
             </button>
             <span>
-              <button
-                type="button"
-                class="btn my-btn newtoold"
-                onclick="clickNewBtn()"
-              >
+              <button type="button" class="btn my-btn newtoold" onclick="clickNewBtn()">
                 New→Old
               </button>
-              <button
-                type="button"
-                class="btn my-btn oldtonew"
-                onclick="clickOldBtn()"
-              >
+              <button type="button" class="btn my-btn oldtonew" onclick="clickOldBtn()">
                 Old→New
               </button>
             </span>
@@ -250,18 +206,10 @@
             <button type="button" class="btn my-btn btn-cute" name="cute">
               可愛版
             </button>
-            <button
-              type="button"
-              class="btn my-btn btn-charactor"
-              name="charactor"
-            >
+            <button type="button" class="btn my-btn btn-charactor" name="charactor">
               立繪
             </button>
-            <button
-              type="button"
-              class="btn my-btn btn-background"
-              name="background"
-            >
+            <button type="button" class="btn my-btn btn-background" name="background">
               背景
             </button>
           </span>
@@ -275,10 +223,10 @@
 
     <!-- contact me -->
 
-  <div class="contactme row">
-    <div class="col-3"><img src="./img/webuse/domilk.svg" class="img-fluid"></div>
-    <div class="col-9"><b>Contact me: menghsin@gmail.com</b></div>
-  </div>
+    <div class="contactme row">
+      <div class="col-3"><img src="./img/webuse/domilk.svg" class="img-fluid"></div>
+      <div class="col-9"><b>Contact me: menghsin@gmail.com</b></div>
+    </div>
 
 
 
@@ -300,11 +248,13 @@
         <i class="fa fa-4x fa-angle-up"></i>
       </div>
     </div>
+  </div>
 
-    <script src="profile.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="profile-slide.js"></script>
-  </body>
+  <script src="profile.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="profile-slide.js"></script>
+</body>
+
 </html>

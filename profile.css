@@ -7,6 +7,7 @@
   --titlecolor: #0bad99;
   --spotlight: #ffb43b;
 }
+
 /* ------------------------- RWD ------------------------------- */
 
 @media (min-width: 320px) {
@@ -17,6 +18,7 @@
   .titleanime {
     font-size: 3rem;
   }
+
   #profile-dialog {
     background: url(./img/webuse/dialog_reverse.svg) no-repeat center center;
     background-size: 15rem;
@@ -27,6 +29,7 @@
     padding-top: 3rem;
     padding-left: 2.5rem;
   }
+
   .profile-photo {
     margin-top: 6rem;
   }
@@ -51,6 +54,7 @@
     padding-top: 3rem;
     padding-left: 2.5rem;
   }
+
   .profile-photo {
     margin-top: 6rem;
   }
@@ -64,9 +68,11 @@
   .titleanime {
     font-size: 4.5rem;
   }
+
   .rwd-dissapear {
     display: none;
   }
+
   #profile-dialog {
     background: url(./img/webuse/dialog_reverse.svg) no-repeat center center;
     background-size: 15rem;
@@ -77,9 +83,11 @@
     padding-top: 3rem;
     padding-left: 2.5rem;
   }
+
   .profile-photo {
     margin-top: 0rem;
   }
+
   .pg-first-text .pg-text {
     color: var(--maincolor);
     margin-top: 4rem;
@@ -106,6 +114,7 @@
     padding-top: 4.5rem;
     padding-left: 4rem;
   }
+
   .profile-photo {
     margin-top: 0rem;
   }
@@ -130,13 +139,16 @@
     padding-top: 4.5rem;
     padding-left: 4rem;
   }
+
   .profile-photo {
     margin-top: 0rem;
   }
+
   .pg-first-text .pg-text {
     margin-top: 10rem;
     margin-left: 5rem;
   }
+
   .pg-second-text .pg-text {
     margin-top: 10.5rem;
     margin-left: 5.5rem;
@@ -162,9 +174,11 @@
     padding-top: 4.5rem;
     padding-left: 4rem;
   }
+
   .profile-photo {
     margin-top: 0rem;
   }
+
   .pg-first-text .pg-text {
     margin-top: 10rem;
     margin-left: 9.5rem;
@@ -177,6 +191,18 @@
 }
 
 /* --------------------------- web start ------------------------- */
+
+#msg {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: var(--titlecolor);
+}
+
 
 body {
   background-color: var(--maincolor);
@@ -391,10 +417,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .exp-img {
   width: 10%;
   margin: 0 auto;
 }
+
 .exp-img-first,
 .exp-text-first,
 .exp-img-second,
@@ -403,15 +431,18 @@ body {
 .exp-text-third {
   height: 1rem;
 }
+
 .exp-img-first {
   background: url(./img/webuse/flow_green_pattern.svg) repeat-y center;
   background-size: 0.3rem;
 }
+
 .exp-img-second {
   width: 1rem;
   border-radius: 50%;
   margin: 0 auto;
 }
+
 .exp-img-third {
   background: url(./img/webuse/flow_green_pattern.svg) repeat-y center;
   background-size: 0.3rem;
@@ -440,6 +471,7 @@ body {
 .exp-text-second {
   margin-top: -0.2rem;
 }
+
 .exp-text-time {
   margin-right: 0.5rem;
 }
@@ -474,6 +506,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .ability-text {
   min-width: 12rem;
   margin: 0 auto;
@@ -512,18 +545,21 @@ body {
     background-size: 16rem;
     height: 12rem;
   }
+
   .pg-first-src {
     order: 2;
     width: 100%;
     margin: 0 auto;
     height: 18rem;
   }
+
   .pg-second-src {
     order: 4;
     width: 100%;
     margin: 0 auto;
     height: 18rem;
   }
+
   .pg-second-text {
     order: 3;
     width: 100%;
@@ -531,14 +567,17 @@ body {
     background-size: 16rem;
     height: 12rem;
   }
+
   .pgwork {
     margin: 0 auto;
     text-align: center;
   }
+
   .pg-first-text .pg-text {
     margin-top: 1rem;
     text-align: center;
   }
+
   .pg-second-text .pg-text {
     margin-top: 1.5rem;
     text-align: center;
@@ -553,18 +592,21 @@ body {
     background-size: 20rem;
     height: 15rem;
   }
+
   .pg-first-src {
     order: 2;
     width: 100%;
     margin: 0 auto;
     height: 25rem;
   }
+
   .pg-second-src {
     order: 4;
     width: 100%;
     margin: 0 auto;
     height: 25rem;
   }
+
   .pg-second-text {
     order: 3;
     width: 100%;
@@ -572,15 +614,18 @@ body {
     background-size: 20rem;
     height: 15rem;
   }
+
   .pgwork {
     margin: 0 auto;
     text-align: center;
   }
+
   .pg-first-text .pg-text {
     margin-top: 2.5rem;
     margin-left: 0 !important;
     text-align: center;
   }
+
   .pg-second-text .pg-text {
     margin-top: 3rem;
     text-align: center;
@@ -596,18 +641,21 @@ body {
     background-size: 22rem;
     height: 18rem;
   }
+
   .pg-first-src {
     order: 2;
     width: 80%;
     margin: 0 auto;
     height: 28rem;
   }
+
   .pg-second-src {
     order: 4;
     width: 80%;
     margin: 0 auto;
     height: 28rem;
   }
+
   .pg-second-text {
     order: 3;
     width: 100%;
@@ -615,6 +663,7 @@ body {
     background-size: 22rem;
     height: 18rem;
   }
+
   .pgwork {
     margin: 0 auto;
     text-align: center;
@@ -625,6 +674,7 @@ body {
     text-align: center;
     margin-left: 0 !important;
   }
+
   .pg-second-text .pg-text {
     margin-top: 4.5rem;
     text-align: center;
@@ -642,17 +692,20 @@ body {
     margin-left: 4rem;
     height: 30rem;
   }
+
   .pg-first-src {
     order: 2;
     width: 50%;
     height: 30rem;
   }
+
   .pg-second-src {
     order: 3;
     width: 50%;
     margin-left: 5rem;
     height: 30rem;
   }
+
   .pg-second-text {
     order: 4;
     width: 40%;
@@ -695,11 +748,13 @@ body {
 .my2013web {
   color: var(--spotlight);
 }
+
 .my2013web:hover {
   color: var(--spotlight);
   filter: hue-rotate(-20deg) brightness(95%);
   text-decoration: none;
 }
+
 .pgwork:hover {
   transform: scale(1.1);
 }
@@ -713,6 +768,7 @@ body {
 .subprogramworks {
   margin-bottom: 2.5rem;
 }
+
 .participate-title {
   color: #a82400;
   width: 10rem;
@@ -743,6 +799,7 @@ body {
 .sub-works:hover {
   transform: scale(1.05) rotate(10deg);
 }
+
 /* ------------------------ picture part ---------------------------- */
 #con-picture {
   background-color: var(--maincolor);
@@ -923,6 +980,7 @@ body {
   vertical-align: top;
   object-fit: cover;
 }
+
 /* ------------------------- contact me ------------------------ */
 .contactme {
   width: 20rem;
@@ -938,6 +996,7 @@ body {
 .contactme:hover {
   transform: scale(1.08);
 }
+
 /* ------------------------- scroll top ------------------------ */
 .scrolltop {
   display: none;
@@ -947,6 +1006,7 @@ body {
   bottom: 1.5rem;
   right: 1.5rem;
 }
+
 .scroll {
   position: absolute;
   right: 1.5rem;
@@ -963,6 +1023,7 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
 }
+
 .scroll:hover {
   background: var(--spotlight);
   filter: brightness(90%) hue-rotate(-20deg);
@@ -971,9 +1032,11 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
 }
+
 .scroll:hover .fa {
   padding-top: -10px;
 }
+
 .scroll .fa {
   font-size: 30px;
   margin-top: -5px;

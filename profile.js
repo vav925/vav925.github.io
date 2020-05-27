@@ -180,6 +180,7 @@ function picSelector(){
         case "all" : 
             picInner.classList.remove("is-show-illust", "is-show-cute", "is-show-charactor", "is-show-background");
             letsortOrigin();
+            picBtns.forEach(e=> e.classList.remove("my-btn-toggle"));
             break;
         case "illust" : 
             picInner.classList.toggle("is-show-illust");

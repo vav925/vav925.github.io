@@ -29,7 +29,7 @@ $(window).scroll(function (event) {
 
 });
 
-$(document).ready(function() {
+$(document).onload(function() {
     $('#body').show();
     $('#msg').hide();
 });

@@ -1,7 +1,3 @@
-$(document).ready(function() {
-    $('#body').show();
-    $('#msg').hide();
-});
 //---------------------------- first part animation ------------------------------
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.titleanime .mytitle');

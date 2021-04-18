@@ -67,7 +67,7 @@ expImgFirst.forEach((e) => {
         e.classList.add("exp-img-none")
     }})
     expImgEnd.forEach((e) => {
-    if(e.dataset.expend==7){
+    if(e.dataset.expend==8){
         e.classList.add("exp-img-none")
     }})
 
